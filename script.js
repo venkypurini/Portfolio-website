@@ -380,7 +380,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "Designed a fully custom glassmorphism modal popup that dynamically renders project details on click.",
                 "Focused on user-friendly navigation, accessibility standards, and professional design aesthetics."
             ],
-            codeLink: "https://github.com/purini-venkatesh"
+            codeLink: "https://github.com/venkypurini/Portfolio-website"
         }
     };
 
