@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Portfolio of Purini Venkatesh - Computer Science & Engineering Student, Data Analyst, and Developer. Explore projects, skills, education, and certifications.">
+    <meta name="keywords" content="Purini Venkatesh, Venkatesh, Portfolio, CSE Student, Data Analyst, Python, Java, SQL, Web Developer, Nellore">
+    <meta name="author" content="Purini Venkatesh">
+    <title>Purini Venkatesh | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Floating Navigation Bar -->
+    <header class="navbar" id="main-header">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" id="nav-logo-link">
+                <span class="logo-symbol">&lt;</span>PV<span class="logo-symbol">/&gt;</span>
+            </a>
+            <nav class="nav-menu" id="nav-menu-bar">
+                <ul>
+                    <li><a href="#home" class="nav-link active" id="link-home">Home</a></li>
+                    <li><a href="#about" class="nav-link" id="link-about">About</a></li>
+                    <li><a href="#skills" class="nav-link" id="link-skills">Skills</a></li>
+                    <li><a href="#projects" class="nav-link" id="link-projects">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link" id="link-certifications">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link" id="link-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" id="hamburger-btn" aria-label="Toggle Navigation Menu">
+                <span class="bar bar-top"></span>
+                <span class="bar bar-middle"></span>
+                <span class="bar bar-bottom"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-menu-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-link" id="mob-link-home">Home</a></li>
+            <li><a href="#about" class="mobile-link" id="mob-link-about">About</a></li>
+            <li><a href="#skills" class="mobile-link" id="mob-link-skills">Skills</a></li>
+            <li><a href="#projects" class="mobile-link" id="mob-link-projects">Projects</a></li>
+            <li><a href="#certifications" class="mobile-link" id="mob-link-certifications">Certifications</a></li>
+            <li><a href="#contact" class="mobile-link" id="mob-link-contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <div class="hero-text-content">
+                <div class="greetings-badge" id="hero-badge">Welcome to my Space</div>
+                <h1 class="hero-title" id="hero-name-heading">
+                    Hi, I'm <span class="highlight-text">Purini Venkatesh</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    I am a <span class="typing-text" id="typewriter-text"></span><span class="cursor">|</span>
+                </h2>
+                <p class="hero-description" id="hero-intro-paragraph">
+                    A detail-oriented Computer Science and Engineering student passionate about programming, data analysis, and exploring machine learning algorithms. Eager to solve real-world problems with code and data.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary" id="btn-hero-projects">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary" id="btn-hero-contact">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image-content">
+                <div class="avatar-glow-wrapper">
+                    <div class="glow-ring glow-ring-1"></div>
+                    <div class="glow-ring glow-ring-2"></div>
+                    <div class="avatar-frame">
+                        <img src="assets/developer_avatar.png" alt="Purini Venkatesh Avatar" class="avatar-img" id="avatar-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scroll-hint">
+            <div class="mouse-icon">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About & Education Section -->
+    <section class="about-section section-padding" id="about">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" id="about-heading">About Me</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">My educational background and professional summary</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-info-card glass-card">
+                    <h3 class="card-subtitle">Summary</h3>
+                    <p class="about-summary-text" id="about-summary-p">
+                        As a CSE student at JNTUA College of Engineering, I have built a solid foundation in programming, data analysis, and basic machine learning concepts. I am highly skilled in languages like Python and Java, and familiar with tools such as SQL and Excel. Eager to apply analytical and problem-solving skills in a challenging role.
+                    </p>
+                    <div class="info-meta-list">
+                        <div class="meta-item">
+                            <span class="meta-label">Location:</span>
+                            <span class="meta-value">Nellore, Andhra Pradesh, India</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Email:</span>
+                            <span class="meta-value"><a href="mailto:venkypurini2004@gmail.com" class="meta-link">venkypurini2004@gmail.com</a></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Study:</span>
+                            <span class="meta-value">B.Tech, Computer Science and Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-timeline-card glass-card">
+                    <h3 class="card-subtitle">Education Journey</h3>
+                    <div class="timeline" id="edu-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Sep 2023 – Apr 2027</div>
+                            <h4 class="timeline-title">B.Tech in Computer Science and Engineering</h4>
+                            <p class="timeline-institution">JNTUA College of Engineering, Kalikiri</p>
+                            <div class="timeline-grade">GPA: 8.4 / 10.0</div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Jun 2021 – Apr 2023</div>
+                            <h4 class="timeline-title">Intermediate (MPC)</h4>
+                            <p class="timeline-institution">Sri Chaitanya Junior College, Mopur, Nellore</p>
+                            <div class="timeline-grade">GPA: 9.6 / 10.0</div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-date">Until 2021</div>
+                            <h4 class="timeline-title">Secondary School</h4>
+                            <p class="timeline-institution">ZPPHS Iskapalli, Nellore</p>
+                            <div class="timeline-grade">GPA: 10.0 / 10.0</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section section-padding" id="skills">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" id="skills-heading">Technical Skills</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Proficiencies and core technologies I work with</p>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill Category 1: Languages -->
+                <div class="skill-category-card glass-card" id="skill-cat-programming">
+                    <h3 class="skill-category-title">
+                        <span class="category-icon">⚡</span> Programming Languages
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 2: Web Technologies -->
+                <div class="skill-category-card glass-card" id="skill-cat-web">
+                    <h3 class="skill-category-title">
+                        <span class="category-icon">🌐</span> Web Development
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 3: Tools & Databases -->
+                <div class="skill-category-card glass-card" id="skill-cat-tools">
+                    <h3 class="skill-category-title">
+                        <span class="category-icon">💾</span> Databases & Tools
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">SQL / Relational Databases</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Microsoft Excel</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PowerPoint</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Category 4: Professional Skills -->
+                <div class="skill-category-card glass-card" id="skill-cat-soft">
+                    <h3 class="skill-category-title">
+                        <span class="category-icon">🤝</span> Professional Strengths
+                    </h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Data Analysis</span>
+                                <span class="skill-percentage">78%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 78%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Teamwork & Collaboration</span>
+                                <span class="skill-percentage">95%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Positive Attitude</span>
+                                <span class="skill-percentage">98%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 98%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects-section section-padding" id="projects">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" id="projects-heading">Featured Projects</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Showcasing my technical and development projects</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-card" id="project-card-vms">
+                    <div class="project-image-container">
+                        <div class="project-placeholder-bg p-bg-2">
+                            <div class="project-code-snippet">const vms = new SmartVMS();</div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Smart Visitor Management System (Smart VMS)</h3>
+                        <p class="project-description">
+                            An enterprise MERN-stack application (VizTrack) built to automate visitor logging, track check-ins, manage employee databases, and facilitate real-time meeting coordinator notifications via Socket.io.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">React.js</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Socket.io</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-btn demo-btn view-details-btn" data-project="vms">View Details</button>
+                            <a href="https://github.com/venkypurini/SmartVMS" target="_blank" rel="noopener noreferrer" class="project-btn code-btn">
+                                <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-card" id="project-card-portfolio">
+                    <div class="project-image-container">
+                        <div class="project-placeholder-bg p-bg-1">
+                            <div class="project-code-snippet">&lt;portfolio-site&gt;</div>
+                        </div>
+                    </div>
+                    <div class="project-details">
+                        <h3 class="project-title">Personal Portfolio Website</h3>
+                        <p class="project-description">
+                            Designed and developed a personal portfolio website to showcase skills, projects, and technical background. Implemented clean and responsive UI, structured content, and focused on user-friendly navigation and professional design standards.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <button class="project-btn demo-btn view-details-btn" data-project="portfolio">View Details</button>
+                            <a href="https://github.com/purini-venkatesh" target="_blank" rel="noopener noreferrer" class="project-btn code-btn">
+                                <svg class="btn-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications-section section-padding" id="certifications">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" id="certs-heading">Certifications</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Professional credentials and training achievements</p>
+            </div>
+
+            <div class="certifications-grid">
+                <!-- Cert 1 -->
+                <div class="cert-card glass-card" id="cert-card-ai">
+                    <div class="cert-icon-wrapper">
+                        <span class="cert-emoji">🤖</span>
+                    </div>
+                    <h3 class="cert-title">AI Skills Passport</h3>
+                    <p class="cert-provider">Issued by EY & Microsoft</p>
+                    <p class="cert-desc">Acquired critical understanding of modern AI technologies, ethical principles, and practical application methods certified by industry leaders.</p>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-card glass-card" id="cert-card-ethical-hacking">
+                    <div class="cert-icon-wrapper">
+                        <span class="cert-emoji">🛡️</span>
+                    </div>
+                    <h3 class="cert-title">Advance Ethical Hacking</h3>
+                    <p class="cert-provider">3-Day Workshop - Savory Minds</p>
+                    <p class="cert-desc">Explored network penetration testing, system vulnerability scanning, and cybersecurity concepts with practical laboratory assignments.</p>
+                </div>
+
+                <!-- Cert 3 -->
+                <div class="cert-card glass-card" id="cert-card-campus-ambassador">
+                    <div class="cert-icon-wrapper">
+                        <span class="cert-emoji">📣</span>
+                    </div>
+                    <h3 class="cert-title">Campus Ambassador</h3>
+                    <p class="cert-provider">Kitech</p>
+                    <p class="cert-desc">Represented tech communities on campus, organized coding workshops, coordinated peer events, and enhanced public speaking and leadership abilities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section section-padding" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title" id="contact-heading">Get In Touch</h2>
+                <div class="title-underline"></div>
+                <p class="section-subtitle">Let's connect and work together</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info Panel -->
+                <div class="contact-info-panel glass-card">
+                    <h3 class="panel-title">Contact Information</h3>
+                    <p class="panel-desc">Feel free to reach out directly through any of these channels or drop a message via the form.</p>
+                    
+                    <div class="contact-details-list">
+                        <div class="contact-info-item">
+                            <div class="icon-box">
+                                <svg class="contact-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                            </div>
+                            <div class="details">
+                                <span class="detail-label">Email</span>
+                                <a href="mailto:venkypurini2004@gmail.com" class="detail-val" id="email-contact-link">venkypurini2004@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="icon-box">
+                                <svg class="contact-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                            </div>
+                            <div class="details">
+                                <span class="detail-label">Phone</span>
+                                <a href="tel:+918247573532" class="detail-val" id="phone-contact-link">+91 82475 73532</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-item">
+                            <div class="icon-box">
+                                <svg class="contact-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                            </div>
+                            <div class="details">
+                                <span class="detail-label">Location</span>
+                                <span class="detail-val">Nellore, Andhra Pradesh, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links-container">
+                        <a href="https://www.linkedin.com/in/purini-venkatesh" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="LinkedIn Profile" id="linkedin-btn">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="social-circle-link" aria-label="GitHub Profile" id="github-footer-btn">
+                            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Panel -->
+                <div class="contact-form-panel glass-card">
+                    <form id="portfolio-contact-form" autocomplete="on">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-name">Your Name</label>
+                                <input type="text" id="form-name" name="name" required placeholder="John Doe">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-email">Your Email</label>
+                                <input type="email" id="form-email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                <input type="text" id="form-subject" name="subject" required placeholder="Project Proposal">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="btn-submit-form">
+                            <span>Send Message</span>
+                            <svg class="send-icon" viewBox="0 0 24 24"><path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container text-center">
+            <p class="copyright">&copy; 2026 Purini Venkatesh. All rights reserved.</p>
+            <p class="design-credit">Designed with cosmic elegance</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Project Details Modal Overlay -->
+    <div id="project-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-card glass-card">
+            <button class="modal-close-btn" id="close-modal-btn" aria-label="Close Project Details">
+                <svg viewBox="0 0 24 24" width="24" height="24"><path fill="currentColor" d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+            </button>
+            <div class="modal-header">
+                <span class="modal-project-badge" id="modal-badge">Project Details</span>
+                <h3 class="modal-project-title" id="modal-title">Project Title</h3>
+                <div class="modal-project-tags" id="modal-tags"></div>
+            </div>
+            <div class="modal-body">
+                <div class="modal-section">
+                    <h4 class="modal-section-title">Overview</h4>
+                    <p class="modal-project-desc" id="modal-desc">Detailed description of the project goes here.</p>
+                </div>
+                <div class="modal-section">
+                    <h4 class="modal-section-title">Key Contributions & Features</h4>
+                    <ul class="modal-bullets-list" id="modal-bullets"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-code-link">
+                    <svg class="btn-icon" viewBox="0 0 24 24" width="16" height="16" style="margin-right:8px;"><path fill="currentColor" d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.579.688.481C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg> View on GitHub
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main JavaScript Logic -->
+    <script src="script.js"></script>
+</body>
+</html>
